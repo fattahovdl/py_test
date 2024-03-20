@@ -3,7 +3,7 @@ print("Hello world!")
 
 
 
-# git branch "name"   - создать
+# git branch "name"   - создатьg
 # git checkout "name" - перейти
 # git add .   - добавить файл
 # git commit -m "comment" - коментарий
