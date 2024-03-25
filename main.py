@@ -18,4 +18,3 @@ print("russs")
 # git pull origin main
 # git pull origin "name"
 # git push origin main
->>>>>>> 4296cb2cdbdcc7dca9f33887b81cebfd226f7a08
