@@ -1,3 +1,21 @@
+class Animal:
+    def __init__(self):
+        self.nogi = 0
+    def walk(self):
+        return print(f"Я хожу на {self.nogi} ногах")
+
+class Cat(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        self.say = "Miya"
+    def talk(self):
+        return print(self.say)
+
+caty = Cat()
+caty.say = "GAV"
+caty.talk()
+caty.nogi = 4
+caty.walk()
 # создать класс животные у которого есть свойство ходить
 #
 # создать подкласс кот у которого есть наследованное
