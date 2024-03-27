@@ -19,7 +19,7 @@ class Cat(Animal):
 caty = Cat()
 caty.say = "GAV"
 caty.talk()
-caty.can_walk(0)
+caty.can_walk(4)
 caty.walk()
 # создать класс животные у которого есть свойство ходить
 #
