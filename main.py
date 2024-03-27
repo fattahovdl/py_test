@@ -1,8 +1,13 @@
 class Animal:
     def __init__(self):
-        self.nogi = 0
+        self.__nogi = 0
     def walk(self):
-        return print(f"Я хожу на {self.nogi} ногах")
+        return print(f"Я хожу на {self.__nogi} ногах")
+    def can_walk(self, kol):
+        if kol == 0:
+            self.__nogi = "не умеет"
+        else:
+            self.__nogi = kol
 
 class Cat(Animal):
     def __init__(self):
@@ -14,7 +19,7 @@ class Cat(Animal):
 caty = Cat()
 caty.say = "GAV"
 caty.talk()
-caty.nogi = 4
+caty.can_walk(0)
 caty.walk()
 # создать класс животные у которого есть свойство ходить
 #
