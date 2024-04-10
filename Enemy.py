@@ -1,4 +1,4 @@
-#enemy
+#ruslan
 
 class enemy:
     def __init__(self, name, hp, armor, dmg):
@@ -19,3 +19,7 @@ assassin = enemy('ассассин', 60, 15, 45)
 flesh = enemy('плоть', 50, 2, 15)
 jerboa = enemy('тушкан', 20, 0, 5)
 buhrer = enemy('бюрер', 140, 4, 46)
+spider = enemy('паук', 90, 8, 34)
+guard = enemy('страж', 120, 30, 50)
+chimera = enemy('химера', 200, 2, 42)
+kobold = enemy('кобольд', 50, 9, 21)
