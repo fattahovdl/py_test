@@ -12,4 +12,4 @@ my_armor=5
 personag=Persona(name,my_hp,my_dmg,my_armor)
 print(personag.imya)
 print(personag.hp)
-
+print(personag.dmg)
