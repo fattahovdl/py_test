@@ -1,6 +1,5 @@
 #enemy
-# враги взяты отсюда:
-# https://www.playground.ru/dark_souls/guide/dark_souls_protivniki_ryadovye_protivniki-1204499
+
 class enemy:
     def __init__(self, name, hp, armor, dmg):
         self.name = name
@@ -13,5 +12,10 @@ class enemy:
                f'броня: {self.armor} \n' \
                f'урон: {self.dmg} \n'
 
-vasilisk = enemy('василиск', 110, 10, 35,)
+vasilisk = enemy('василиск', 110, 30, 35,)
 print(vasilisk)
+thief = enemy('вор', 100, 10, 25)
+assassin = enemy('ассассин', 60, 15, 45)
+flesh = enemy('плоть', 50, 2, 15)
+jerboa = enemy('тушкан', 20, 0, 5)
+buhrer = enemy('бюрер', 140, 4, 46)
