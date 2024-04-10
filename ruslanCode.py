@@ -13,5 +13,5 @@ class enemy:
                f'броня: {self.armor} \n' \
                f'урон: {self.dmg} \n'
 
-vasilisk = enemy('василиск', '110', '10', '35',)
+vasilisk = enemy('василиск', 110, 10, 35,)
 print(vasilisk)
