@@ -1,47 +1,17 @@
-# создать класс животные у которого есть свойство ходить
-#
-# создать подкласс кот у которого есть наследованное
-# свойство ходить и свой  свойство говорить Мяу
+#enemy
+# враги взяты отсюда:
+# https://www.playground.ru/dark_souls/guide/dark_souls_protivniki_ryadovye_protivniki-1204499
+class enemy:
+    def __init__(self, name, hp, armor, dmg):
+        self.name = name
+        self.hp = hp
+        self.armor = armor
+        self.dmg = dmg
+    def __str__(self):
+        return f'противник: {self.name} \n' \
+               f'хп: {self.hp} \n' \
+               f'броня: {self.armor} \n' \
+               f'урон: {self.dmg} \n'
 
-class Animal:
-    def __init__(self, pet):
-        self.pet = pet
-
-    def legs(self, legs):
-        self.legs = legs
-
-    def wool(self, wool):
-        self.wool = wool
-
-    def sound(self, sound):
-        self.sound = sound
-
-    def say(self):
-        print(f"Я {self.pet}, хожу на {self.legs} ногах, {self.wool} и говорю {self.sound}")
-
-
-cat = Animal("кот")
-cat.legs("4")
-cat.wool("шерстяной")
-cat.sound("мяу")
-
-
-def ch():
-    choice = input("1. инфо\n"
-                   "2. сказать мяу\n"
-                   "3. выйти\n")
-
-    if choice == "1":
-        cat.say()
-
-    if choice == "2":
-        sayCount = int(input("сколько раз?"))
-        for i in range(sayCount):
-            print(f"{cat.sound}")
-
-    if choice == "3":
-        exit()
-
-
-while True:
-    ch()
+vasilisk = enemy('василиск', '110', '10', '35',)
+print(vasilisk)
